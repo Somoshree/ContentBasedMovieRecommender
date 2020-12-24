@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MOVIE RECOMMENDER</title>
+	<link rel="stylesheet" href="/static/style.css">
+</head>
+<body style="background-image: url('/static/img.png');background-repeat: no-repeat;height: 100%;background-position: relative;background-size: cover";>
+	<div>
+		<h2 class="header2" style="color:blue;text-align: center;font-size: 50px;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"> WELCOME TO MY MOVIE RECOMMENDER SYSTEM! </h2>
+		<h4 class="header4" style="color:red;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;font-size: 25px;"> Enter the name of the hollywood movie that you would like to recieve recommendations for : </h4>
+	</div>
+	<form action="{{url_for('recommend')}}">
+    <input class = "form" type="text" name="movie" placeholder="Movie name here">
+    <br>
+    <input class = "submission" type="submit" value="Enter">
+  </form>
+</body>
+</html>
